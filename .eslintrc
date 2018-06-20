@@ -1,0 +1,66 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "commonjs": true
+  },
+  "globals": {
+    "$": true,
+    "XuntongJSBridge": false,
+    "document": true,
+    "navigator": true,
+    "window":true,
+    "store":true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+     "ecmaVersion": 7,
+      "ecmaFeatures": {
+          "experimentalObjectRestSpread": true,
+          "jsx": true,
+          "arrowFunctions": true,
+          "classes": true,
+          "modules": true,
+          "defaultParams": true
+      },
+      "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react", "import"],
+  "rules": {
+      "quotes": [1, "single"],
+      "linebreak-style": 0,
+      "no-mixed-spaces-and-tabs": 0,
+      "no-var": 1,
+      "prefer-arrow-callback":1,
+      "no-empty": 2,
+      "comma-dangle": 0,
+      "no-console": 0,
+      "no-const-assign": 2,
+      "no-dupe-class-members": 2,
+      "no-duplicate-case": 2,
+      "no-extra-parens": [2, "functions"],
+      "no-self-compare": 2,
+      "accessor-pairs": 2,
+      "no-debugger": 2,
+      "no-unreachable": 2,
+      "no-unused-expressions": [2,{ "allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates":true }],
+      "no-unused-vars": [2, {"vars": "all", "args": "after-used", "ignoreRestSiblings": true}],
+      "comma-spacing": [1, { "before": false,  "after": true }],
+      "constructor-super": 2,
+      "new-cap": [2, { "newIsCap": true,"capIsNew": false}],
+      "new-parens": 2,
+      "no-array-constructor": 2,
+      "no-class-assign": 2,
+      "no-cond-assign": 2,
+      "react/no-find-dom-node":0,
+      "react/no-string-refs":0,
+      "react/jsx-key": 2,
+      "react/no-direct-mutation-state": 2,
+      "react/prop-types":0
+  }
+}
